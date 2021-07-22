@@ -16,40 +16,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vVZ-l9-hvJ">
-                                <rect key="frame" x="120" y="356" width="80" height="80"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="80" id="ebC-UT-nFX"/>
-                                    <constraint firstAttribute="height" constant="80" id="o1P-DI-908"/>
-                                </constraints>
-                                <state key="normal" image="kakaolink_btn_medium"/>
-                                <connections>
-                                    <action selector="kakaoLoginBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="R0N-q1-P3Y"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CcH-ff-rk3">
-                                <rect key="frame" x="30" y="364" width="65" height="65"/>
+                                <rect key="frame" x="47" y="374" width="320" height="60"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="65" id="DVG-bg-Muc"/>
-                                    <constraint firstAttribute="height" constant="65" id="XlI-2K-gcP"/>
+                                    <constraint firstAttribute="width" constant="320" id="Bv6-Kf-O1Y"/>
+                                    <constraint firstAttribute="height" constant="60" id="P32-oc-eVw"/>
                                 </constraints>
-                                <state key="normal" image="btnG_nemo"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q4O-RH-iUu">
-                                <rect key="frame" x="224" y="364" width="65" height="65"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="65" id="Fe7-NK-NkV"/>
-                                    <constraint firstAttribute="height" constant="65" id="wr8-xI-bdv"/>
-                                </constraints>
-                                <state key="normal" image="face_btn"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jdz-qr-iZa">
-                                <rect key="frame" x="314" y="364" width="70" height="70"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="70" id="XT9-Fv-crt"/>
-                                    <constraint firstAttribute="height" constant="70" id="as9-7T-Nyb"/>
-                                </constraints>
-                                <state key="normal" image="google_btn"/>
+                                <state key="normal" image="btnG"/>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="email" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8tZ-ew-fsg">
                                 <rect key="frame" x="32" y="194" width="350" height="50"/>
@@ -81,27 +54,35 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vVZ-l9-hvJ">
+                                <rect key="frame" x="47" y="444" width="320" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="R4B-ML-F8r"/>
+                                    <constraint firstAttribute="height" constant="60" id="V7m-lU-vfO"/>
+                                </constraints>
+                                <state key="normal" image="kakao_login_large_wide"/>
+                                <connections>
+                                    <action selector="kakaoLoginBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="R0N-q1-P3Y"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="CcH-ff-rk3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="15z-Jh-udK"/>
-                            <constraint firstItem="jdz-qr-iZa" firstAttribute="top" secondItem="akW-sj-ka8" secondAttribute="bottom" constant="50" id="2eq-m3-cxu"/>
                             <constraint firstItem="akW-sj-ka8" firstAttribute="top" secondItem="8tZ-ew-fsg" secondAttribute="bottom" constant="20" id="CSl-aI-V8U"/>
                             <constraint firstItem="aAu-hW-FFx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="CYx-02-OTb"/>
-                            <constraint firstItem="vVZ-l9-hvJ" firstAttribute="top" secondItem="akW-sj-ka8" secondAttribute="bottom" constant="42" id="IR8-Ti-ula"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CcH-ff-rk3" secondAttribute="trailing" constant="47" id="Edv-Ja-xkS"/>
+                            <constraint firstItem="CcH-ff-rk3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="47" id="I6P-ge-DyH"/>
                             <constraint firstItem="8tZ-ew-fsg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="IYP-iW-TUR"/>
-                            <constraint firstItem="CcH-ff-rk3" firstAttribute="top" secondItem="akW-sj-ka8" secondAttribute="bottom" constant="50" id="Jqa-L1-Y3z"/>
-                            <constraint firstItem="q4O-RH-iUu" firstAttribute="top" secondItem="akW-sj-ka8" secondAttribute="bottom" constant="50" id="Lc0-Qd-tWG"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8tZ-ew-fsg" secondAttribute="trailing" constant="32" id="Ne5-9u-jCS"/>
                             <constraint firstItem="8tZ-ew-fsg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="O8d-qV-qCd"/>
-                            <constraint firstItem="q4O-RH-iUu" firstAttribute="leading" secondItem="vVZ-l9-hvJ" secondAttribute="trailing" constant="24" id="ToF-Nf-3bq"/>
-                            <constraint firstItem="vVZ-l9-hvJ" firstAttribute="leading" secondItem="CcH-ff-rk3" secondAttribute="trailing" constant="25" id="cJR-aJ-2Hd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vVZ-l9-hvJ" secondAttribute="trailing" constant="47" id="Tkb-Cw-dkP"/>
+                            <constraint firstItem="CcH-ff-rk3" firstAttribute="top" secondItem="akW-sj-ka8" secondAttribute="bottom" constant="60" id="Zdm-ue-Mcr"/>
+                            <constraint firstItem="vVZ-l9-hvJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="47" id="clH-WQ-hJ4"/>
                             <constraint firstItem="8tZ-ew-fsg" firstAttribute="top" secondItem="aAu-hW-FFx" secondAttribute="bottom" constant="5" id="kot-WS-NtH"/>
                             <constraint firstItem="akW-sj-ka8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="ktt-1u-x5P"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="akW-sj-ka8" secondAttribute="trailing" constant="32" id="mLe-Ya-QbS"/>
-                            <constraint firstItem="jdz-qr-iZa" firstAttribute="leading" secondItem="q4O-RH-iUu" secondAttribute="trailing" constant="25" id="to2-Vv-aJ6"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jdz-qr-iZa" secondAttribute="trailing" constant="30" id="uFL-Jt-B1E"/>
+                            <constraint firstItem="vVZ-l9-hvJ" firstAttribute="top" secondItem="CcH-ff-rk3" secondAttribute="bottom" constant="10" id="yS8-PR-UMQ"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -126,10 +107,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="btnG_nemo" width="200" height="200"/>
-        <image name="face_btn" width="225" height="225"/>
-        <image name="google_btn" width="225" height="225"/>
-        <image name="kakaolink_btn_medium" width="68" height="69"/>
+        <image name="btnG" width="1000" height="200"/>
+        <image name="kakao_login_large_wide" width="600" height="90"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

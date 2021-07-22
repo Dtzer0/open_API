@@ -8,6 +8,7 @@
 import UIKit
 import KakaoSDKAuth
 import KakaoSDKUser
+import FBSDKLoginKit
 
 class ViewController: UIViewController {
 
@@ -30,9 +31,16 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        //Facebook login button custom
+        let loginButton = FBLoginButton()
+        loginButton.frame = CGRect(x: 47, y: 520, width: 295, height: 60)
+        loginButton.layer.cornerRadius = 20
+        view.addSubview(loginButton)
+        
+        if let token = AccessToken.current, !token.isExpired {
+            // User is logged in, do work such as go to next view controller.
+        }
     }
-
-
 }
 
