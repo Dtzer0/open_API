@@ -14,6 +14,7 @@
 		EC4224E726A688F1009A9E11 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC4224E526A688F1009A9E11 /* Main.storyboard */; };
 		EC4224E926A688F2009A9E11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC4224E826A688F2009A9E11 /* Assets.xcassets */; };
 		EC4224EC26A688F2009A9E11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC4224EA26A688F2009A9E11 /* LaunchScreen.storyboard */; };
+		EC4224F826AA3C52009A9E11 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EC4224F726AA3C52009A9E11 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		EC4224E826A688F2009A9E11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC4224EB26A688F2009A9E11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC4224ED26A688F2009A9E11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC4224F726AA3C52009A9E11 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 				EC4224E826A688F2009A9E11 /* Assets.xcassets */,
 				EC4224EA26A688F2009A9E11 /* LaunchScreen.storyboard */,
 				EC4224ED26A688F2009A9E11 /* Info.plist */,
+				EC4224F726AA3C52009A9E11 /* GoogleService-Info.plist */,
 			);
 			path = signit;
 			sourceTree = "<group>";
@@ -103,6 +106,7 @@
 				EC4224D926A688F1009A9E11 /* Frameworks */,
 				EC4224DA26A688F1009A9E11 /* Resources */,
 				9BE13ED17192BD61FCBF953D /* [CP] Embed Pods Frameworks */,
+				1918CD6035A023E3E2C6002C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -151,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC4224EC26A688F2009A9E11 /* LaunchScreen.storyboard in Resources */,
+				EC4224F826AA3C52009A9E11 /* GoogleService-Info.plist in Resources */,
 				EC4224E926A688F2009A9E11 /* Assets.xcassets in Resources */,
 				EC4224E726A688F1009A9E11 /* Main.storyboard in Resources */,
 			);
@@ -159,6 +164,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1918CD6035A023E3E2C6002C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-signit/Pods-signit-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-signit/Pods-signit-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-signit/Pods-signit-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		9AAB2BEA65AE6B5059A52716 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

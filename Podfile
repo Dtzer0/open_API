@@ -18,4 +18,15 @@ pod 'KakaoSDKUser'  # 카카오 로그인, 사용자 관리
 #Facebook
 pod 'FBSDKLoginKit'
 
+#google
+pod 'GoogleSignIn'
+
+#FireBase
+pod 'Firebase/Core'
+pod 'Firebase/Auth'
+pod 'GoogleSignIn'
+
+# add pods for desired Firebase products
+# https://firebase.google.com/docs/ios/setup#available-pods
+
 end
