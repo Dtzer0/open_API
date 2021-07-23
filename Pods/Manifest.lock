@@ -147,6 +147,7 @@ PODS:
   - PromisesObjC (1.2.12)
 
 DEPENDENCIES:
+  - Alamofire
   - FBSDKLoginKit
   - Firebase/Auth
   - Firebase/Core
@@ -220,6 +221,6 @@ SPEC CHECKSUMS:
   naveridlogin-sdk-ios: b9d7c20677981177ed994ecb1c8c2b49f223277d
   PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
 
-PODFILE CHECKSUM: 110e17822770b52dc801aca67051eb07f5ab28b3
+PODFILE CHECKSUM: 0206e9c116d747acc0e4aad94a7add53b2344592
 
 COCOAPODS: 1.10.1

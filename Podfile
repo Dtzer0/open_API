@@ -28,6 +28,7 @@ pod 'GoogleSignIn'
 
 #Naver
 pod 'naveridlogin-sdk-ios'
+pod 'Alamofire'
 
 # add pods for desired Firebase products
 # https://firebase.google.com/docs/ios/setup#available-pods
