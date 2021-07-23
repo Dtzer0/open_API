@@ -9,9 +9,15 @@ import UIKit
 import KakaoSDKAuth
 import KakaoSDKUser
 import FBSDKLoginKit
+import GoogleSignIn
 
 class ViewController: UIViewController {
 
+    @IBAction func googleLoginBtn(_ sender: Any) {
+        GIDSignIn.sharedInstance()?.signIn()
+    }
+    
+    
     @IBAction func kakaoLoginBtn(_ sender: Any) {
         
         //기존 로그인 여부와 상관없이 로그인 요청 : 카카오계정으로 로그인
@@ -34,13 +40,15 @@ class ViewController: UIViewController {
         
         //Facebook login button custom
         let loginButton = FBLoginButton()
-        loginButton.frame = CGRect(x: 47, y: 520, width: 295, height: 60)
+        loginButton.frame = CGRect(x: 47, y: 625, width: 295, height: 60)
         loginButton.layer.cornerRadius = 20
         view.addSubview(loginButton)
         
         if let token = AccessToken.current, !token.isExpired {
             // User is logged in, do work such as go to next view controller.
         }
+        
+        GIDSignIn.sharedInstance()?.presentingViewController = self
     }
 }
 

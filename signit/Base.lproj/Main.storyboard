@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CcH-ff-rk3">
-                                <rect key="frame" x="47" y="374" width="320" height="60"/>
+                                <rect key="frame" x="47" y="414" width="320" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="320" id="Bv6-Kf-O1Y"/>
                                     <constraint firstAttribute="height" constant="60" id="P32-oc-eVw"/>
@@ -34,13 +34,13 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="로그인" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aAu-hW-FFx">
-                                <rect key="frame" x="32" y="139" width="100" height="50"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="해당 서비스를 이용하려면 로그인하세요" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aAu-hW-FFx">
+                                <rect key="frame" x="20" y="104" width="370" height="70"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="EX6-Xk-R9f"/>
-                                    <constraint firstAttribute="height" constant="50" id="v5j-vE-hEe"/>
+                                    <constraint firstAttribute="width" constant="370" id="EX6-Xk-R9f"/>
+                                    <constraint firstAttribute="height" constant="70" id="v5j-vE-hEe"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="21"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -55,33 +55,76 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vVZ-l9-hvJ">
-                                <rect key="frame" x="47" y="444" width="320" height="60"/>
+                                <rect key="frame" x="47" y="484" width="320" height="55"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="320" id="R4B-ML-F8r"/>
-                                    <constraint firstAttribute="height" constant="60" id="V7m-lU-vfO"/>
+                                    <constraint firstAttribute="height" constant="55" id="V7m-lU-vfO"/>
                                 </constraints>
                                 <state key="normal" image="kakao_login_large_wide"/>
                                 <connections>
                                     <action selector="kakaoLoginBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="R0N-q1-P3Y"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O46-uw-Toz">
+                                <rect key="frame" x="32" y="549" width="350" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="aHV-IX-CAd"/>
+                                    <constraint firstAttribute="width" constant="350" id="gqg-sf-e08"/>
+                                </constraints>
+                                <state key="normal" image="R720x0.q80"/>
+                                <connections>
+                                    <action selector="googleLoginBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TcP-ar-MAM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dsb-Wy-2aP" customClass="loginBtn">
+                                <rect key="frame" x="132" y="329" width="150" height="50"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="LRD-4w-7Qc"/>
+                                    <constraint firstAttribute="height" constant="50" id="St6-xC-UWZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="로그인">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B04-Ie-Web">
+                                <rect key="frame" x="107" y="827" width="200" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="1T7-VE-K6O"/>
+                                    <constraint firstAttribute="width" constant="200" id="CXZ-rk-wQd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="로그인 없이 진행하기">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="dsb-Wy-2aP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="132" id="2ro-sL-73E"/>
+                            <constraint firstItem="dsb-Wy-2aP" firstAttribute="top" secondItem="akW-sj-ka8" secondAttribute="bottom" constant="15" id="8in-jA-jFj"/>
                             <constraint firstItem="akW-sj-ka8" firstAttribute="top" secondItem="8tZ-ew-fsg" secondAttribute="bottom" constant="20" id="CSl-aI-V8U"/>
-                            <constraint firstItem="aAu-hW-FFx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="CYx-02-OTb"/>
+                            <constraint firstItem="aAu-hW-FFx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="CYx-02-OTb"/>
+                            <constraint firstItem="B04-Ie-Web" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="5" id="D3m-zr-A7E"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CcH-ff-rk3" secondAttribute="trailing" constant="47" id="Edv-Ja-xkS"/>
                             <constraint firstItem="CcH-ff-rk3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="47" id="I6P-ge-DyH"/>
                             <constraint firstItem="8tZ-ew-fsg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="IYP-iW-TUR"/>
+                            <constraint firstItem="O46-uw-Toz" firstAttribute="top" secondItem="vVZ-l9-hvJ" secondAttribute="bottom" constant="10" id="JUa-iv-758"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8tZ-ew-fsg" secondAttribute="trailing" constant="32" id="Ne5-9u-jCS"/>
                             <constraint firstItem="8tZ-ew-fsg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="O8d-qV-qCd"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vVZ-l9-hvJ" secondAttribute="trailing" constant="47" id="Tkb-Cw-dkP"/>
-                            <constraint firstItem="CcH-ff-rk3" firstAttribute="top" secondItem="akW-sj-ka8" secondAttribute="bottom" constant="60" id="Zdm-ue-Mcr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="O46-uw-Toz" secondAttribute="trailing" constant="32" id="UBL-42-bm1"/>
+                            <constraint firstItem="CcH-ff-rk3" firstAttribute="top" secondItem="akW-sj-ka8" secondAttribute="bottom" constant="100" id="Zdm-ue-Mcr"/>
                             <constraint firstItem="vVZ-l9-hvJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="47" id="clH-WQ-hJ4"/>
-                            <constraint firstItem="8tZ-ew-fsg" firstAttribute="top" secondItem="aAu-hW-FFx" secondAttribute="bottom" constant="5" id="kot-WS-NtH"/>
+                            <constraint firstItem="B04-Ie-Web" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="107" id="gtL-om-wxh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dsb-Wy-2aP" secondAttribute="trailing" constant="132" id="hnP-kK-evK"/>
+                            <constraint firstItem="8tZ-ew-fsg" firstAttribute="top" secondItem="aAu-hW-FFx" secondAttribute="bottom" constant="20" id="kot-WS-NtH"/>
                             <constraint firstItem="akW-sj-ka8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="ktt-1u-x5P"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="akW-sj-ka8" secondAttribute="trailing" constant="32" id="mLe-Ya-QbS"/>
+                            <constraint firstItem="O46-uw-Toz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="qfA-Av-hNe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="B04-Ie-Web" secondAttribute="trailing" constant="107" id="whQ-1l-XvS"/>
                             <constraint firstItem="vVZ-l9-hvJ" firstAttribute="top" secondItem="CcH-ff-rk3" secondAttribute="bottom" constant="10" id="yS8-PR-UMQ"/>
                         </constraints>
                     </view>
@@ -107,6 +150,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="R720x0.q80" width="541" height="109"/>
         <image name="btnG" width="1000" height="200"/>
         <image name="kakao_login_large_wide" width="600" height="90"/>
         <systemColor name="systemBackgroundColor">

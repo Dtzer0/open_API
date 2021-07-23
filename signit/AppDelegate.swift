@@ -8,9 +8,29 @@
 import UIKit
 import KakaoSDKCommon
 import FBSDKCoreKit
+import Firebase
+import GoogleSignIn
 
 @main
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
+    
+    // User 정보를 서버로 부터 가져올경우 다음 싱글톤 객체 사용 (user.profile.suerId 등등)
+    public static var user: GIDGoogleUser!
+    
+    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
+        if let error = error {
+            if(error as NSError).code == GIDSignInErrorCode.hasNoAuthInKeychain.rawValue {
+                print("not signed in before or signed out")
+            } else {
+                print(error.localizedDescription)
+            }
+        }
+        
+        // singleton 객체 - user가 로그인을 하면, AppDelegate.user로 다른곳에서 사용 가능
+        AppDelegate.user = user
+        
+        return
+    }
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -24,7 +44,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 didFinishLaunchingWithOptions: launchOptions
             )
         
+        //앱을 시작할 떄 Firebase에 연결하기위한 코드
+        FirebaseApp.configure()
+        
+        //clientID와 인증에 관한 코드
+        GIDSignIn.sharedInstance()?.clientID = "1025944166891-3shne0lnf0v8csr957btvgvkg4u39m0g.apps.googleusercontent.com"
+        GIDSignIn.sharedInstance()?.delegate = self
+        
         return true
+    }
+    
+    //clientID와 인증에 관한 코드
+    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+        return (GIDSignIn.sharedInstance()?.handle(url))!
     }
     
     // MARK: UISceneSession Lifecycle
@@ -43,4 +75,3 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 }
-
