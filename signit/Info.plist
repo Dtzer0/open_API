@@ -32,6 +32,14 @@
 				<string>com.googleusercontent.apps.1025944166891-3shne0lnf0v8csr957btvgvkg4u39m0g</string>
 			</array>
 		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>naverloginapi</string>
+			</array>
+		</dict>
 	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>

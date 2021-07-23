@@ -143,6 +143,7 @@ PODS:
     - nanopb/encode (= 2.30908.0)
   - nanopb/decode (2.30908.0)
   - nanopb/encode (2.30908.0)
+  - naveridlogin-sdk-ios (4.1.3)
   - PromisesObjC (1.2.12)
 
 DEPENDENCIES:
@@ -154,6 +155,7 @@ DEPENDENCIES:
   - KakaoSDKAuth
   - KakaoSDKCommon
   - KakaoSDKUser
+  - naveridlogin-sdk-ios
 
 SPEC REPOS:
   trunk:
@@ -184,6 +186,7 @@ SPEC REPOS:
     - KakaoSDKTemplate
     - KakaoSDKUser
     - nanopb
+    - naveridlogin-sdk-ios
     - PromisesObjC
 
 SPEC CHECKSUMS:
@@ -214,8 +217,9 @@ SPEC CHECKSUMS:
   KakaoSDKTemplate: 5939681de6c24fd81e93bf824982e979e794f87e
   KakaoSDKUser: 5d2de71fe070455bbaaad6a37af3eb500fbc8972
   nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
+  naveridlogin-sdk-ios: b9d7c20677981177ed994ecb1c8c2b49f223277d
   PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
 
-PODFILE CHECKSUM: 659bcb2a7f925b2d425c8870ba894e4f9e0d4365
+PODFILE CHECKSUM: 110e17822770b52dc801aca67051eb07f5ab28b3
 
 COCOAPODS: 1.10.1

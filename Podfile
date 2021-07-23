@@ -26,6 +26,9 @@ pod 'Firebase/Core'
 pod 'Firebase/Auth'
 pod 'GoogleSignIn'
 
+#Naver
+pod 'naveridlogin-sdk-ios'
+
 # add pods for desired Firebase products
 # https://firebase.google.com/docs/ios/setup#available-pods
 
