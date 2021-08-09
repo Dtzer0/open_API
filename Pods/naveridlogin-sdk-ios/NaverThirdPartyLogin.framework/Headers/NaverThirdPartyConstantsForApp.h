@@ -10,6 +10,12 @@
 #define kCheckResultPage        @"thirdPartyLoginResult"
 #define kThirdParty_IS_IPAD     ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad)
 
+#define kServiceAppUrlScheme    @"naverlogin"
+
+#define kConsumerKey            @"CLIENT_ID"
+#define kConsumerSecret         @"CLIENT_SECRET"
+#define kServiceAppName         @"Naver-Login"
+
 typedef enum {
     SUCCESS = 0,
     PARAMETERNOTSET = 1,

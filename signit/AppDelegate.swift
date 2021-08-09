@@ -10,6 +10,7 @@ import KakaoSDKCommon
 import FBSDKCoreKit
 import Firebase
 import GoogleSignIn
+import NaverThirdPartyLogin
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
@@ -51,11 +52,31 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         GIDSignIn.sharedInstance()?.clientID = "1025944166891-3shne0lnf0v8csr957btvgvkg4u39m0g.apps.googleusercontent.com"
         GIDSignIn.sharedInstance()?.delegate = self
         
+        let instance = NaverThirdPartyLoginConnection.getSharedInstance()
+               
+               // 네이버 앱으로 인증하는 방식 활성화
+               instance?.isNaverAppOauthEnable = true
+               
+               // SafariViewController에서 인증하는 방식 활성화
+               instance?.isInAppOauthEnable = true
+               
+               // 인증 화면을 아이폰의 세로모드에서만 적용
+               instance?.isOnlyPortraitSupportedInIphone()
+               
+               instance?.serviceUrlScheme = kServiceAppUrlScheme // 앱을 등록할 때 입력한 URL Scheme
+               instance?.consumerKey = kConsumerKey // 상수 - client id
+               instance?.consumerSecret = kConsumerSecret // pw
+               instance?.appName = kServiceAppName // app name
+        
         return true
     }
     
     //clientID와 인증에 관한 코드
     func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+        
+        NaverThirdPartyLoginConnection.getSharedInstance()?.application(app, open: url, options: options)
+        
+        //return true
         return (GIDSignIn.sharedInstance()?.handle(url))!
     }
     

@@ -8,6 +8,7 @@
 import UIKit
 import KakaoSDKAuth
 import FBSDKCoreKit
+import NaverThirdPartyLogin
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -32,6 +33,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             sourceApplication: nil,
             annotation: [UIApplication.OpenURLOptionsKey.annotation]
         )
+        
+        NaverThirdPartyLoginConnection
+               .getSharedInstance()?
+               .receiveAccessToken(URLContexts.first?.url)
     }
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {

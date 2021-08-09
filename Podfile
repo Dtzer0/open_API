@@ -30,6 +30,9 @@ pod 'GoogleSignIn'
 pod 'naveridlogin-sdk-ios'
 pod 'Alamofire'
 
+#Calender
+pod 'FSCalendar'
+
 # add pods for desired Firebase products
 # https://firebase.google.com/docs/ios/setup#available-pods
 
